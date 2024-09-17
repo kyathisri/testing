@@ -18,7 +18,7 @@ test("test case: 1", async({page})=> {
     await page.hover("(//a[@class='main-heading']//p)[1]");
     await page.click("(//a[@class='main-heading']//p)[1]");
     await page.waitForTimeout(1000);
-    // await page.close()
+    await page.close()
 })
 
 test("img verification", async ({page}) =>{
